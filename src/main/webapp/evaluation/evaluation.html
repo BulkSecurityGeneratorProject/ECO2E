@@ -1,0 +1,55 @@
+<div>
+    <form novalidate >
+        <div class="container-fluid">
+            <div class="form-group">
+
+                <div class="row>">
+                    <div class="form-group">
+                        <div class="col-md-3">
+                            total Fuel Consumption:
+                        </div>
+
+                        <input type="text" ng-model="data.totalFuelConsumption"></div>
+                </div>
+
+
+                <div class="row>">
+                    <div class="form-group">
+                        <div class="col-md-3">fuel Standard Emission:
+                        </div>
+
+                        <input type="text" ng-model="data.fuelStandardEmission">
+                    </div>
+                </div>
+
+                <div class="row>">
+                    <div class="form-group">
+                        <div class="col-md-3">average Emission Per Household:</div>
+
+                        <input type="text" ng-model="data.averageEmissionPerHousehold">
+                    </div>
+                </div>
+
+                <div class="row>">
+                    <div class="form-group">
+                        <div class="col-md-3">household Number:</div>
+
+                        <input type="text" ng-model="data.householdNumber">
+                    </div>
+                </div>
+
+                <div class="row>">
+                    <div class="col-md-3"></div>
+                    <button class="btn btn-primary" ng-click="evaluate()">Evaluate</button>
+                </div>
+
+            </div>
+        </div>
+    </form>
+
+    <div class="row>">
+        <div class="col-md-2"></div>
+        result = {{result}}
+    </div>
+</div>
+
